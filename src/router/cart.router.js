@@ -20,7 +20,7 @@ const requiredInfo = (req, res, next) =>{
 
 
 
-router.post('/', (req, res)=>{
+router.post('/', requiredInfo, (req, res)=>{
 
 manager.save(req.body)
     .then(result => res.send(result))

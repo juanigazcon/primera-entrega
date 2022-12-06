@@ -2,21 +2,6 @@
   {
     "productos": [
       {
-        "nombre": "Torta Pepe",
-        "descripcion": "Re pepe",
-        "codigo": "5678",
-        "foto": "www.pepe.com",
-        "precio": 10000,
-        "stock": 10,
-        "id": 1
-      }
-    ],
-    "id": 1,
-    "timestamp": "12/5/2022, 7:06:33 PM"
-  },
-  {
-    "productos": [
-      {
         "nombre": "Torta Marquisse",
         "descripción": "Riquísima",
         "código": "1234",
@@ -75,7 +60,7 @@
     "timestamp": "12/5/2022, 7:19:17 PM"
   },
   {
-    "productos": [
+    "products": [
       {
         "nombre": "Torta Marquisse",
         "descripción": "Riquísima",
@@ -84,18 +69,14 @@
         "precio": "3500",
         "stock": "10",
         "id": 1
-      },
-      {
-        "nombre": "Torta Marquisse",
-        "descripción": "Riquísima",
-        "código": "1234",
-        "foto": "www.marquisse.com",
-        "precio": "3500",
-        "stock": "10",
-        "id": 56
       }
     ],
     "id": 2,
-    "timestamp": "12/5/2022, 7:18:18 PM"
+    "timestamp": "12/6/2022, 4:31:00 PM"
+  },
+  {
+    "products": [],
+    "id": 1,
+    "timestamp": "12/6/2022, 4:42:58 PM"
   }
 ]

@@ -136,6 +136,7 @@ class CartManager{
         productId = parseInt(productId)
         let timestamp = new Date().toLocaleString();
 
+    try{
         if (fs.existsSync(file)) {
             
             let carts = this.toReadFile(file)
@@ -153,11 +154,17 @@ class CartManager{
             let newCarts = [...otherCarts, {...newCart}]
 
             this.toWriteFile(file, newCarts)
+            return {status: "Success", message: "Product was successfully deleted from cart"}
 
         } else {
-            return {error: 0, descripcion: 'No existe la BD'}
+            return{status: "Error", message:"File doesn´t exist"}
         }
-    } 
+    } catch(err){
+
+        return{status: "Error", message: err.message}
+    }
+
+}
 
 
 }

@@ -15,5 +15,5 @@ app.use('/api/productos', productRouter)
 app.use('/api/carrito', cartRouter)
 
 app.use((req,res) => {
-    res.status(404).send({error: -2, descripcion: `ruta ${req.baseUrl}${req.url} metodo ${req.method} no implementada`})
+    res.status(404).send({status:"Error", message: `Ruta ${req.baseUrl}${req.url}, método ${req.method} no encontrados`})
 })

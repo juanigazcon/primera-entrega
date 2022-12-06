@@ -93,8 +93,7 @@ class CartManager{
     }
 
 
-
-
+    //agregar un nuevo producto en un carrito existente
     updateCartById = async(id, newProduct) =>{
         id= parseInt(id)
         try{    
@@ -129,7 +128,7 @@ class CartManager{
 
  
 
-
+    //eliminar un producto de un carrito por id de carrito y de producto
      deleteProduct = async(cartId, productId) =>{
 
         cartId = parseInt(cartId)
